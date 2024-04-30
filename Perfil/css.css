@@ -1,0 +1,141 @@
+* {
+    margin: 0; /* Remove as margens padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda no tamanho total do elemento */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família de fontes do corpo do documento */
+    line-height: 1.3; /* Define a altura da linha do texto */
+    background-color: #000000; /* Define a cor de fundo do corpo do documento */
+    color: #fffffc; /* Define a cor do texto do corpo do documento */
+}
+
+header {
+    background-color: #000000; /* Define a cor de fundo do cabeçalho */
+    color: #fffffd; /* Define a cor do texto do cabeçalho */
+    padding: 20px; /* Define o preenchimento do cabeçalho */
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    box-shadow: 0 2px 5px rgba(255, 230, 0, 0.1); /* Adiciona uma sombra ao cabeçalho */
+}
+
+header h1 {
+    text-transform: uppercase; /* Transforma o texto do título em maiúsculas */
+    letter-spacing: 3px; /* Define o espaçamento entre as letras do título */
+    margin-bottom: 20px; /* Define a margem inferior do título */
+    text-shadow: 2px 2px 4px rgba(228, 228, 228, 0.493); /* Adiciona uma sombra ao texto do título */
+    animation: pulse 2s infinite alternate; /* Adiciona uma animação de pulsação ao título */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1); /* Inicia a animação com o tamanho original do elemento */
+    }
+    to {
+        transform: scale(1.05); /* Termina a animação aumentando o tamanho do elemento em 5% */
+    }
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores de lista do menu de navegação */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens do menu de navegação em linha */
+    margin-right: 20px; /* Define a margem direita dos itens do menu de navegação */
+}
+
+nav ul li a {
+    color: #ffffff; /* Define a cor dos links do menu de navegação */
+    text-decoration: none; /* Remove o sublinhado dos links do menu de navegação */
+    font-size: 1.2em; /* Define o tamanho da fonte dos links do menu de navegação */
+    transition: color 0.3s ease-in-out; /* Adiciona uma transição suave à mudança de cor dos links do menu de navegação */
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Define a cor dos links do menu de navegação quando o mouse passa sobre eles */
+}
+
+main {
+    padding: 20px; /* Define o preenchimento do conteúdo principal */
+}
+
+section {
+    margin-bottom: 40px; /* Define a margem inferior das seções */
+    padding: 40px; /* Define o preenchimento das seções */
+    background-color: #000000; /* Define a cor de fundo das seções */
+    border-radius: 100px; /* Arredonda os cantos das seções */
+    box-shadow: 0 0.5px 40px rgba(250, 2, 2, 0.418); /* Adiciona uma sombra às seções */
+}
+
+img {
+    border-image: 25%; /* Define a largura da borda da imagem */
+    max-width: 25%; /* Define a largura máxima da imagem */
+    height: 50%; /* Define a altura da imagem */
+    border-radius: 50%; /* Arredonda os cantos da imagem */
+    margin-bottom: 20px; /* Define a margem inferior da imagem */
+    box-shadow: 0 0 30px rgba(248, 3, 3, 0.247); /* Adiciona uma sombra à imagem */
+    animation: rotate 4s infinite linear; /* Adiciona uma animação de rotação à imagem */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg); /* Inicia a animação girando a imagem em 360 graus */
+    }
+    to {
+        transform: rotate(360deg); /* Termina a animação girando a imagem em 360 graus */
+    }
+}
+
+section h2 {
+    font-size: 2.5em; /* Define o tamanho da fonte dos subtítulos das seções */
+    color: #f7d309; /* Define a cor dos subtítulos das seções */
+    margin-bottom: 25px; /* Define a margem inferior dos subtítulos das seções */
+    text-align: center; /* Centraliza os subtítulos das seções */
+}
+
+section p {
+    font-size: 1.2em; /* Define o tamanho da fonte dos parágrafos das seções */
+    color: #ffffff; /* Define a cor dos parágrafos das seções */
+    line-height: 1.8; /* Define a altura da linha dos parágrafos das seções */
+    margin-bottom: 20px; /* Define a margem inferior dos parágrafos das seções */
+}
+
+section ul {
+    list-style-type: none; /* Remove os marcadores de lista das seções */
+}
+
+section ul li {
+    margin-bottom: 15px; /* Define a margem inferior dos itens de lista das seções */
+}
+
+footer {
+    background-color: #000000; /* Define a cor de fundo do rodapé */
+    color: #a3f50b; /* Define a cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 20px; /* Define o preenchimento do rodapé */
+    position: fixed; /* Fixa a posição do rodapé no fundo da página */
+    bottom: 0; /* Define a posição do rodapé no fundo da página */
+    left: 0; /* Define a posição do rodapé à esquerda da página */
+    width: 100%; /* Define a largura do rodapé para ocupar toda a largura da página */
+}
+
+footer ul {
+    list-style-type: none; /* Remove os marcadores de lista do rodapé */
+}
+
+footer ul li {
+    display: inline; /* Exibe os itens de lista do rodapé em linha */
+    margin-right: 15px; /* Define a margem direita dos itens de lista do rodapé */
+}
+
+footer ul li a {
+    color: #ffd700; /* Define a cor dos links do rodapé */
+    text-decoration: none; /* Remove o sublinhado dos links do rodapé */
+    font-size: 1.5em; /* Define o tamanho da fonte dos links do rodapé */
+    transition: color 1.3s ease-in-out; /* Adiciona uma transição suave à mudança de cor dos links do rodapé */
+}
+
+footer ul li a:hover {
+    color: #f70d0d; /* Define a cor dos links do rodapé quando o mouse passa sobre eles */
+}
